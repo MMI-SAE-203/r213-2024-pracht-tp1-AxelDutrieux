@@ -30,9 +30,9 @@ const sectionOpen = ref(0)
 </script>
 
 <template>
-    <section v-for="({ label, texte }, key) of sectionsData" :v-key="key" @pointerdown="sectionOpen=key">
-  <pre class="font-mono">key : {{ key }}</pre>
-  <pre class="font-mono">label : {{ label }}</pre>
+    <section v-for="({ label, texte }, key) of sectionsData" :key="key" @pointerdown="sectionOpen=key">
+  <pre class="font-mono"></pre>
+  <pre class="font-mono">{{ label }}</pre>
   <pre class="font-mono" v-show="sectionOpen===key">texte : {{ texte }}</pre>
 </section>
 </template>
