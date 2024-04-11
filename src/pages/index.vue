@@ -7,4 +7,7 @@
   <li>
     <router-link to="/accordeon"> Accordeon </router-link>
   </li>
+  <li>
+    <router-link to="/boucles"> Boucles </router-link> 
+  </li>
 </template>
